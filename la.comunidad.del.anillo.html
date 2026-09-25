@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La comunidad del anillo</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="contenedor-principal">
+        <header class="sitio-encabezado">
+            <div class="contenido-cabecera">
+                <img src="Imagenes/logo.senor.anillos.png" alt="Logo de El Senor de los Anillos" class="logo-principal">
+                <nav class="menu-navegacion">
+                    <a href="index.html">Home</a>
+                    <a href="las.dos.torres.html">Las dos torres</a>
+                    <a href="el.retorno.del.rey.html">El retorno del rey</a>
+                    <a href="galeria.html">Galeria</a>
+                    <a href="contactos.html">Contactos</a>
+                </nav>
+            </div>
+        </header>
+        <section class="seccion-carrusel">
+            <div class="contenedor-carrusel">
+                <div class="diapositiva-carrusel activa">
+                    <img src="Imagenes/comunidad.caminando.carrusel.jpg" alt="Imagen principal de la comunidad del anillo en el carrusel">
+                </div>
+                <div class="diapositiva-carrusel">
+                    <img src="Imagenes/casa.bilbo.carrusel.png" alt="Imagen secundaria de casa de bilbo">
+                </div>
+                <div class="diapositiva-carrusel">
+                    <img src="Imagenes/frodo.anillo.carrusel.png" alt="frodo y el anillo">
+                </div>
+                 <div class="diapositiva-carrusel">
+                    <img src="Imagenes/boromir.carrusel.jpg" alt="frodo y el anillo">
+                </div>
+            </div>
+            <div class="indicadores-carrusel">
+                <span class="punto activo" data-diapositiva="0"></span>
+                <span class="punto" data-diapositiva="1"></span>
+                <span class="punto" data-diapositiva="2"></span>
+                <span class="punto" data-diapositiva="3"></span>
+            </div>
+        </section>
+        <section class="seccion-columnas-inferiores">
+            <div class="columna-inferior">
+                <img src="Imagenes/hobbityelfosprincipal.jpg" alt="La Comunidad" class="imagen-columna">
+                <a href="personajes.html" class="boton-marron-titulo">Conoce a la comunidad</a>
+            </div>
+            <div class="columna-inferior">
+                <img src="Imagenes/golum.2.jpg" alt="Trivia" class="imagen-columna">
+                <button class="boton-marron-titulo boton-desplegable">
+                    <span>Pon a prueba tu conocimiento</span>
+                    <span class="material-symbols-outlined flecha-desplegable">keyboard_arrow_down</span>
+                </button>
+                <div class="contenido-respuesta">
+                    <div class="item-pregunta-trivia" id="bloque-pregunta-1">
+                        <div class="caja-pregunta">¿Frodo heredó el Anillo Único directamente de Bilbo Bolsón?</div>
+                        <div class="contenedor-opciones">
+                            <button class="boton-trivia" onclick="verificarRespuestaTrivia(true, true, 'alerta-resultado', 1)">True</button>
+                            <button class="boton-trivia" onclick="verificarRespuestaTrivia(false, true, 'alerta-resultado', 1)">False</button>
+                        </div>
+                        <p id="alerta-resultado" class="alerta-resultado"></p>
+                    </div>
+                    <div class="item-pregunta-trivia pregunta-oculta" id="bloque-pregunta-2">
+                        <div class="caja-pregunta">¿El Anillo Único fue forjado originalmente en los valles de Rivendel?</div>
+                        <div class="contenedor-opciones">
+                            <button class="boton-trivia" onclick="verificarRespuestaTrivia(true, false, 'res2', 2)">True</button>
+                            <button class="boton-trivia" onclick="verificarRespuestaTrivia(false, false, 'res2', 2)">False</button>
+                        </div>
+                        <p id="res2" class="alerta-resultado"></p>
+                    </div>
+                    <div class="item-pregunta-trivia pregunta-oculta" id="bloque-pregunta-3">
+                        <div class="caja-pregunta">¿Con el alias de "Trancos" o "Strider" se conoce a Aragorn en la taberna de Bree?</div>
+                        <div class="contenedor-opciones">
+                            <button class="boton-trivia" onclick="verificarRespuestaTrivia(true, true, 'res3', 3)">True</button>
+                            <button class="boton-trivia" onclick="verificarRespuestaTrivia(false, true, 'res3', 3)">False</button>
+                        </div>
+                        <p id="res3" class="alerta-resultado"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="columna-inferior">
+                <img src="Imagenes/detras de esena.jpg" alt="Detrás de cámaras" class="imagen-columna">
+                
+                <button class="boton-marron-titulo boton-desplegable">
+                    <span>Conoce el detrás de cámaras</span>
+                    <span class="material-symbols-outlined flecha-desplegable">keyboard_arrow_down</span>
+                </button>
+                <div class="contenido-respuesta">
+                    <section class="seccion-efectos">
+                        <div class="item-efecto-ampliable">
+                            <img src="Imagenes/maqueta.jpg" alt="Maqueta de Minas Tirith" class="imagen-ampliable" id="imagenMaqueta" onclick="ampliarImagen('imagenMaqueta')">
+                            <div class="texto-explicacion-abajo">
+                                <strong>1. Maquetas gigantes:</strong> Se construyeron estructuras hiperdetalladas.
+                            </div>
+                            <div class="boton-cerrar" onclick="cerrarImagen('imagenMaqueta')">✕</div>
+                        </div>
+                        <hr class="divisor">
+                        <div class="item-efecto-ampliable">
+                            <img src="Imagenes/esacala.forzada.jpg" alt="Explicación escala forzada" class="imagen-ampliable" id="imagenEscala" onclick="ampliarImagen('imagenEscala')">
+                            <div class="texto-explicacion-abajo">
+                                <strong>2. Escalas forzadas:</strong> Usaron trucos de perspectiva.
+                            </div>
+                            <div class="boton-cerrar" onclick="cerrarImagen('imagenEscala')">✕</div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <footer class="sitio-pie">
+            <p>Copyright 2026 - Todos los derechos reservados - Belen Bordeu</p>
+        </footer>
+    </div>
+    <script src="codigo.js"></script>
+</body>
+</html>

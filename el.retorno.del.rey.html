@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El retorno del rey</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="contenedor-principal">
+        <header class="sitio-encabezado">
+            <div class="contenido-cabecera">
+                <img src="Imagenes/logo.senor.anillos.png" alt="Logo de El Señor de los Anillos" class="logo-principal">
+                <nav class="menu-navegacion">
+                    <a href="index.html">Home</a>
+                    <a href="la.comunidad.del.anillo.html">La comunidad del anillo</a>
+                    <a href="las.dos.torres.html">Las dos torres</a>
+                    <a href="galeria.html">Galeria</a>
+                    <a href="contactos.html">Contactos</a>
+                </nav>
+            </div>
+        </header>
+        <section class="seccion-columnas-inferiores">
+            <div class="columna-inferior tarjeta-contenido-oculta" id="tarjetaRectangulo1">
+                <img src="Imagenes/retorno1.jpg" alt="Escena del Retorno del Rey 1" class="imagen-columna especie-img imagen-oculta-inicial" id="imgOculta1">
+                <div class="contenedor-boton-descubrir" id="contenedorBtn1">
+                    <button class="boton-marron-titulo" onclick="descubrirImagen(1)">Descubre la imagen</button>
+                </div>
+            </div>
+            <div class="columna-inferior tarjeta-contenido-oculta" id="tarjetaRectangulo2">
+                <img src="Imagenes/retorno2.webp" alt="Escena del Retorno del Rey 2" class="imagen-columna especie-img imagen-oculta-inicial" id="imgOculta2">
+                <div class="contenedor-boton-descubrir" id="contenedorBtn2">
+                    <button class="boton-marron-titulo" onclick="descubrirImagen(2)">Descubre la imagen</button>
+                </div>
+            </div>
+            <div class="columna-inferior tarjeta-contenido-oculta" id="tarjetaRectangulo3">
+                <img src="Imagenes/retorno3.jpg" alt="Escena del Retorno del Rey 3" class="imagen-columna especie-img imagen-oculta-inicial" id="imgOculta3">
+                <div class="contenedor-boton-descubrir" id="contenedorBtn3">
+                    <button class="boton-marron-titulo" onclick="descubrirImagen(3)">Descubre la imagen</button>
+                </div>
+            </div>
+        </section>
+        <section class="fila-pelicula">
+            <img src="Imagenes/pelicula.libro.webp" alt="Foto libro y película" class="pelicula-img">
+            <div class="pelicula-caja-texto">
+                <h3 style="font-family: 'Merriweather', serif; font-size: 18px; color: #2b2b2b;">Explora el universo completo</h3>
+                <p style="font-family: 'Montserrat', sans-serif; font-size: 13px; color: #2b2b2b; line-height: 1.5;">Descubre cómo se adaptó esta obra maestra literaria a la gran pantalla y cuáles fueron las diferencias clave.</p>
+                <a href="peliculasylibros.html" class="boton-marron-titulo" style="justify-content: center;">
+                    Conoce las diferencias entre los libros y las películas
+                </a>
+            </div>
+        </section>
+        <footer class="sitio-pie">
+            <p>Copyright 2026 - Todos los derechos reservados - Belen Bordeu</p>
+        </footer>
+    </div>
+    <script src="codigo.js"></script>
+</body>
+</html>
